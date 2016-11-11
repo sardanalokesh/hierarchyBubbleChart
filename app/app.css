@@ -1,5 +1,67 @@
 /* app css stylesheet */
 
+svg.hierarchyBubbleChart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+
+.hierarchyBubbleChart .node {
+  cursor: pointer;
+}
+
+.hierarchyBubbleChart .node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.hierarchyBubbleChart .node--leaf {
+  fill: white;
+}
+
+.hierarchyBubbleChart .label {
+  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.hierarchyBubbleChart .label,
+.hierarchyBubbleChart .node--root,
+.hierarchyBubbleChart .node--leaf {
+  /*pointer-events: none;*/
+}
+
+div.tooltip { 
+    position: absolute;     
+    text-align: center;
+    min-width: 70px;  
+    width: auto;          
+    height: auto;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: #000000;
+    color: #ffffff; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+.breadcrumb {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.breadcrumb text {
+  fill: #fff;
+}
+
+.bubbleChart text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
